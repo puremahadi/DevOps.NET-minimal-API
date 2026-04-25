@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet-minimal-api-deployment
+  labels:
+    app: dotnet-api
+spec:
+  replicas: 2 # আপনার দুটি ওয়ার্কার নোড আছে, তাই ২ টি রেপ্লিকা দেওয়া হয়েছে
+  selector:
+    matchLabels:
+      app: dotnet-api
+  template:
+    metadata:
+      labels:
+        app: dotnet-api
+    spec:
+      containers:
+      - name: dotnet-api-container
+        # এখানে আপনার ডকার হাবের ইমেজ নামটি দিন (যেমন: puremahadi/devops-dotnet-simple-project:latest)
+        image: puremahadi/devops-dotnet-simple-project:latest 
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"

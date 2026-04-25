@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dotnet-api-service
+spec:
+  type: NodePort # লোকাল ভ্যাগ্রান্ট সেটআপে ব্রাউজার থেকে অ্যাক্সেস করার জন্য NodePort সবচেয়ে সহজ
+  selector:
+    app: dotnet-api
+  ports:
+    - protocol: TCP
+      port: 80          # সার্ভিসের ভার্চুয়াল পোর্ট
+      targetPort: 8080  # আপনার ডকার ফাইলের এক্সপোজ করা পোর্ট (৮০৮০)
+      nodePort: 30080   # ব্রাউজারে চেক করার জন্য এই পোর্টটি (৩০MD৮০) ব্যবহার করবেন
