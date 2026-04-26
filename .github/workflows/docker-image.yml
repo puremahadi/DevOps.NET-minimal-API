@@ -23,8 +23,8 @@ jobs:
         id: build_and_push
         uses: docker/build-push-action@v5
         with:
-          context: "./NET minimal API/" 
-          file: "./NET minimal API/Dockerfile"
+          context: './NET minimal API/'
+          file: './NET minimal API/Dockerfile'
           push: true
           # আপনার চাহিদা মতো V ক্যাপিটাল, রান নম্বর এবং ফুল SHA ট্যাগ
           tags: puremahadi/devops-dotnet-simple-project:V${{ github.run_number }}-${{ github.sha }}
