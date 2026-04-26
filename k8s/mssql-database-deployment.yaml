@@ -21,8 +21,8 @@ spec:
           value: "Pure@Mahadi123"
         resources:
           limits:
-            memory: "1536Mi"
-            cpu: "500m"
+            memory: "2Gi"
+            cpu: "1000m"
           requests:
             memory: "1Gi"
-            cpu: "250m"
+            cpu: "500m"
