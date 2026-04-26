@@ -23,7 +23,7 @@ jobs:
         id: build_and_push
         uses: docker/build-push-action@v5
         with:
-          context: './NET minimal API/'
+          context: .
           file: './NET minimal API/Dockerfile'
           push: true
           # আপনার চাহিদা মতো V ক্যাপিটাল, রান নম্বর এবং ফুল SHA ট্যাগ
