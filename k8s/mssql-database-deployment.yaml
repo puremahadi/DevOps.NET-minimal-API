@@ -18,4 +18,4 @@ spec:
         - name: ACCEPT_EULA
           value: "Y"
         - name: MSSQL_SA_PASSWORD
-          value: "Pure@Mahadi123" # শক্তিশালী পাসওয়ার্ড দিন
+          value: "Pure@Mahadi123" # শক্তিশালী পাসওয়ার্ড দিন 
