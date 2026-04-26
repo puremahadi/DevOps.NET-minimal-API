@@ -17,7 +17,7 @@ spec:
       containers:
       - name: dotnet-api-container
         # এখানে আপনার ডকার হাবের ইমেজ নামটি দিন (যেমন: puremahadi/devops-dotnet-simple-project:latest)
-        image: puremahadi/devops-dotnet-simple-project:V7-0f83d08414197e83e752d6ab5698253fc5ec6f76
+        image: puremahadi/devops-dotnet-simple-project:V8-4aab82e2e139201a154088ff3faa80da00be31bb
         ports:
         - containerPort: 8080
         resources:
