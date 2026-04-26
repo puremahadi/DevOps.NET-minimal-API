@@ -13,9 +13,16 @@ spec:
     spec:
       containers:
       - name: mssql
-        image: ://microsoft.com
+        image: mcr.microsoft.com/mssql/server:2022-latest
         env:
         - name: ACCEPT_EULA
           value: "Y"
         - name: MSSQL_SA_PASSWORD
-          value: "Pure@Mahadi123" # শক্তিশালী পাসওয়ার্ড দিন 
+          value: "Pure@Mahadi123"
+        resources:
+          limits:
+            memory: "1536Mi"
+            cpu: "500m"
+          requests:
+            memory: "1Gi"
+            cpu: "250m"
