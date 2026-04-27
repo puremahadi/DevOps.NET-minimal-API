@@ -5,7 +5,7 @@ metadata:
   labels:
     app: dotnet-api
 spec:
-  replicas: 2 # আপনার দুটি ওয়ার্কার নোড আছে, তাই ২ টি রেপ্লিকা দেওয়া হয়েছে
+  replicas: 2 
   selector:
     matchLabels:
       app: dotnet-api
@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: dotnet-api-container
-        # এখানে আপনার ডকার হাবের ইমেজ নামটি দিন (যেমন: puremahadi/devops-dotnet-simple-project:latest)
-        image: puremahadi/devops-dotnet-simple-project:V13-736dd288eec76a9f1386c4afb9af97a603c3a376
+        # কনফ্লিক্ট মার্কারগুলো সরিয়ে লেটেস্ট ইমেজ ট্যাগটি রাখুন
+        image: puremahadi/devops-dotnet-simple-project:V14-186c25883035a1075d6d23c5b9bfffced8f65540
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: "Development" # এটি আপনাকে বিস্তারিত এরর দেখাবে
@@ -25,8 +25,8 @@ spec:
         - containerPort: 8080
         resources:
           limits:
-            memory: "256Mi" # ৫১২ থেকে কমিয়ে ২৫৬ করুন
-            cpu: "200m"    # ৫০০ থেকে কমিয়ে ২০০ করুন
+            memory: "256Mi"
+            cpu: "200m"
           requests:
             memory: "128Mi"
             cpu: "100m"
