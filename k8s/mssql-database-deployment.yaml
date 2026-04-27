@@ -21,8 +21,8 @@ spec:
           value: "Pure@Mahadi123"
         resources:
           limits:
-            memory: "1Gi"
-            cpu: "500m"
+            memory: "1.5Gi"
+            cpu: "1000m"
           requests:
-            memory: "512Mi" # ৭০০ থেকে কমিয়ে ৫১২ করুন
-            cpu: "100m"
+            memory: "1Gi" # ৭০০ থেকে কমিয়ে ৫১২ করুন
+            cpu: "500m"
