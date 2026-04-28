@@ -1,4 +1,6 @@
-# DevOps.NET-minimal-API
+### 🏗️ Project Architecture
+
+```mermaid
 graph TD
     subgraph "Local Development PC"
         A[Developer] -->|Code Push| B[GitHub Repository]
@@ -30,3 +32,4 @@ graph TD
     end
 
     N[Browser] -->|Access App| M
+```
