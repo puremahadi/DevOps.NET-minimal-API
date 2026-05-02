@@ -17,7 +17,7 @@ spec:
       containers:
       - name: dotnet-api-container
         # কনফ্লিক্ট মার্কারগুলো সরিয়ে লেটেস্ট ইমেজ ট্যাগটি রাখুন
-        image: puremahadi/devops-dotnet-simple-project:V17
+        image: puremahadi/devops-dotnet-simple-project:V18
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: "Development" # এটি আপনাকে বিস্তারিত এরর দেখাবে
