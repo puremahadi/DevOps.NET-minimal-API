@@ -8,7 +8,7 @@ pipeline {
         
         DOCKER_HUB_CREDS_ID = 'docker-hub-creds'
         KUBE_CONFIG_CREDS_ID = 'kube-config'
-        GITHUB_CREDS_ID = 'my-vm-token' // জেনকিন্সে আপনার গিটের ক্রেডেনশিয়াল আইডি
+        GITHUB_CREDS_ID = 'Jenkins-GitOps-Token' // জেনকিন্সে আপনার গিটের ক্রেডেনশিয়াল আইডি
     }
 
     stages {
