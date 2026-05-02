@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_USER = "puremahadi" 
-        IMAGE_NAME = "dotnet-minimal-api" // আপনি এই নামটিই ব্যবহার করতে চেয়েছেন
+        IMAGE_NAME = "devops-dotnet-simple-project" // আপনি এই নামটিই ব্যবহার করতে চেয়েছেন
         DOCKER_IMAGE = "${DOCKER_HUB_USER}/${IMAGE_NAME}:V${BUILD_NUMBER}"
         
         DOCKER_HUB_CREDS_ID = 'docker-hub-creds'
